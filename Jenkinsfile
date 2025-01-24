@@ -9,10 +9,10 @@ stage('clean'){
                 bat 'C:/Build/apache-maven-3.9.8/bin/mvn clean'
             }
         }
-stage('package'){
+stage('validate'){
             steps
             {   
-                bat 'C:/Build/apache-maven-3.9.8/bin/mvn package'
+                bat 'C:/Build/apache-maven-3.9.8/bin/mvn validate'
             }
         }
 
